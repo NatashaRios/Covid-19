@@ -10,14 +10,20 @@ const dataContent = document.querySelector(".js-data");
 
 
 async function getCases() {
+  let country = input.value;
+  if(country.length == 0){
+    dataContent.style.display = "none";
+    horror.style.display = "block";
+    return 
+  }
   try {
-    let country = input.value;
+    
     const responseData = await fetch(`https://api.covid19api.com/total/country/${country}`);
     const data = await responseData.json();
 
     const lastElement = data[data.length -1];
     console.log(lastElement)
-    if(data.message && data.message == "Not Found") {
+    if(data.message && data.message == "Not Found" || typeof data != "object") {
       dataContent.style.display = "none";
       horror.style.display = "block";
       console.log("El país ingresado no existe");
