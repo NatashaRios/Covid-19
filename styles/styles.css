@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  font-family: "Noto Sans", sans-serif;
+  background-image: url(../assets/covid19-2.png);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+  min-height: 100vh;
+}
+.wrapper .content {
+  max-width: 30rem;
+  margin: 0 auto;
+  border-radius: 15px;
+  border: 5px solid #ffcbcb;
+  padding: 4rem 2rem 4rem 2rem;
+}
+.wrapper .content .title {
+  text-align: center;
+  color: #faeee7;
+  font-size: 2em;
+  line-height: 2.5rem;
+  font-weight: bold;
+}
+@media screen and (max-width: 1024px) {
+  .wrapper .content .title {
+    font-size: 3em;
+    line-height: 3.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .wrapper .content .title {
+    font-size: 2.1em;
+    line-height: 2.5rem;
+  }
+}
+.wrapper .content .search {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem auto 3rem auto;
+}
+.wrapper .content .search .input {
+  margin-bottom: 1rem;
+  height: 2.5rem;
+  padding-left: 1rem;
+  border-radius: 5px;
+  background-color: #ffcbcb;
+  border: solid #ffcbcb;
+  font-size: 1.1em;
+  text-align: center;
+}
+@media screen and (max-width: 1024px) {
+  .wrapper .content .search .input {
+    height: 3rem;
+    font-size: 1.5em;
+    margin-bottom: 1.5rem;
+  }
+}
+.wrapper .content .search .button {
+  height: 2.5rem;
+  border-radius: 5px;
+  background-color: #ffcbcb;
+  border: solid #ffcbcb;
+  color: grey;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+@media screen and (max-width: 1024px) {
+  .wrapper .content .search .button {
+    height: 3rem;
+    font-size: 1.5em;
+  }
+}
+.wrapper .content .horror {
+  display: none;
+  color: #faeee7;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+@media screen and (max-width: 1024px) {
+  .wrapper .content .horror {
+    font-size: 2em;
+  }
+}
+.wrapper .content .data {
+  text-align: center;
+  color: #faeee7;
+  display: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.wrapper .content .data .info {
+  font-size: 1.5em;
+}
+@media screen and (max-width: 1024px) {
+  .wrapper .content .data .info {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 480px) {
+  .wrapper .content .data .info {
+    font-size: 1.7em;
+  }
+}
+.wrapper .content .data .info-content {
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  font-size: 1.2em;
+  color: #f6def6;
+}
+@media screen and (max-width: 1024px) {
+  .wrapper .content .data .info-content {
+    font-size: 1.7em;
+  }
+}
+@media screen and (max-width: 480px) {
+  .wrapper .content .data .info-content {
+    font-size: 1.5em;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
